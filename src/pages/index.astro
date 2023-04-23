@@ -1,0 +1,114 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection('blog')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+const last_posts = posts.slice(0, 3);
+---
+
+<BaseLayout>
+
+    <div class="pb-12 mt-5">
+      <div class="text-xl py-1">Hey there 👋</div>
+      <div class="text-5xl font-bold">I'm Hermar López</div>
+      <div class="text-3xl py-3 font-bold">Engineer System and Frontend Developer</div>
+      <div class="py-2">
+        <text class="text-lg">
+          Welcome to my personal website! I am pleased to share with all of you my latest projects and developments. Here you will find everything you need to know about me, my creative and business activities.
+          </text
+        >
+      </div>
+      <div class="mt-8">
+        <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> Let's connect!</a>
+        <a href="https://github.com/manuelernestog/astro-modern-personal-website" target="_blank" class="btn btn-outline ml-5"> Know me!</a>
+      </div>
+    </div>
+
+    <div>
+      <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+    </div>
+
+    <HorizontalCard
+      title="HackLatino - Shopify Website"
+      img="/HackLatinoWebsite.webp"
+      desc="Look what I achieved! I designed the website for HackLatino Academy using the Shopify CMS platform, meeting all the specifications requested by the client. It looks amazing!"
+      url="#"
+      badge="#SHOPIFY"
+    />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+    title="Octopus - Landingpage"
+    img="/octopusLanding.webp"
+    desc="Don't miss what I just did for Octopus Agency! I created an impressive landing page that explains the importance of SEO for websites. It's a true work of art! Come take a look and discover how they can help you improve the performance of your website."
+    url="#"
+    badge="#HTML #CSS"
+  />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+    title="UMAEE ForAll - Website"
+    img="/UMAEEForAll.webp"
+    desc="Discover the amazing UMAEE ForAll website created with the powerful CMS Kajabi!"
+    url="#"
+    badge="#KAJABI #CSS"
+  />
+
+  <div class="divider my-0"></div>
+  <HorizontalCard
+  title="UMAEE - Email Marketing"
+  img="/EmailMarketing.webp"
+  desc="Tackle the challenge of structuring emails from scratch with embedded CSS! Although it is often considered a bad practice, what other option is there when no alternatives are available?."
+  url="#"
+  badge="#HTML #CSS"
+/>
+
+<div class="divider my-0"></div>
+  <HorizontalCard
+  title="UMAEE Netflix - Mockup"
+  img="/umaeeMockUp.webp"
+  desc="I have wanted to have my own portfolio to share with my friends for a long time, and now I have finally achieved it! I am really excited to have been able to create it."
+  url="#"
+  badge="#FIGMA #PHOTOSHOP"
+/>
+
+<div class="divider my-0"></div>
+  <HorizontalCard
+  title="My Own Portfolio"
+  img="/myFirstPortfolio.webp"
+  desc="I have wanted to have my own portfolio to share with my friends for a long time, and now I have finally achieved it! I am really excited to have been able to create it."
+  url="#"
+  badge="#HTML #CSS #ASTRO"
+/>
+
+
+<div class=""></div>
+  <HorizontalCard
+  title="Show all..."
+  url="/projects"
+/>
+
+
+
+
+
+    <div>
+      <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
+    </div>
+
+    {
+      last_posts.map((post) => (
+        <HorizontalCard
+          title={post.data.title}
+          img={post.data.heroImage}
+          desc={post.data.description}
+          url={"/blog/" + post.slug}
+          target="_self"
+          badge={post.data.badge}
+        />
+        <div class="divider my-0"></div>
+      ))
+    }
+</BaseLayout>

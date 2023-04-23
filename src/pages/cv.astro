@@ -1,0 +1,83 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title = "Resume">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profile</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    I am a passionate web developer focused on creating innovative and functional solutions that meet the needs of my clients and end-users. I implement cutting-edge technologies and continuously adapt to market trends. If you're looking for a highly motivated and creative professional to join your web development team, I am willing to work hard to help your project reach its full potential.
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Licenciatura en Ingeniería en Sistemas Computacionales"
+      subtitle="2022 to present at Universidad Más Educación y Enseñanza, Tabasco, México"
+    />
+    <!--
+    <TimeLineElement
+      title="Informatics Science Engineer"
+      subtitle="2010 to 2015 at University of Informatics Science (UCI), Habana, Cuba"
+    />
+     -->
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Digital platforms manager and academic assistant."
+      subtitle="From 2021 at 2023, Tabasco, México"
+      desc="System multiplatform that includes the steps of a company's personnel, the structure and composition thereof, as well as a powerful designer of credentials and module of control of access. Outspread at the MINFAR and another entities of the country. Technologies: C++, Qt Framework, Subversión, Visual Paradigm, PostgreSQL, Jmeter"
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certifications</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <a href="https://community.open-bootcamp.com/user/soyzith/certificaciones/5912f58a-5e47-43aa-9fa1-6d77206e83c7" target="_blank"> Conceptos de la programación (OpenBootcamp)</a>
+    </li>
+    <li>
+      <a href="https://community.open-bootcamp.com/user/soyzith/certificaciones/b4b8e02f-6024-4501-90d8-859fb73d7b9c" target="_blank"> HTML y CSS (OpenBootcamp)</a>
+    </li>
+     <li>
+      <a href="https://www.efset.org/cert/DxtNKG" target="_blank"> Conceptos básicos de Cloud Computing (Grow with Google)</a>
+    </li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 mx-6">
+    <li>Spanish (Native)</li>
+    <li>English (C2)</li>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Tailwind</li>
+    <li>Bootstrap</li>
+    <li>JavaScript</li>
+    <li>Git</li>
+    <li>Github</li>
+    <li>Shopify</li>
+    <li>Kajabi</li>
+    <li>Wordpress</li>
+    <li>Astro</li>
+    <li>Photoshop</li>
+    <li>Adobe Illustrator</li>
+    
+    
+  </ul>
+</BaseLayout>

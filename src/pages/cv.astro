@@ -1,7 +1,9 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import TimeLineElement from "../components/cv/TimeLine.astro";
+import SkillsTech from "../components/cv/SkillsTech.astro";
 ---
+
 
 <BaseLayout title = "Resume">
   <div class="mb-5">
@@ -11,6 +13,7 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
   <div class="mb-10 text-justify">
     I am a passionate web developer focused on creating innovative and functional solutions that meet the needs of my clients and end-users. I implement cutting-edge technologies and continuously adapt to market trends. If you're looking for a highly motivated and creative professional to join your web development team, I am willing to work hard to help your project reach its full potential.
   </div>
+
 
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Education</div>
@@ -57,27 +60,7 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
     </li>
   </ul>
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Skills</div>
-  </div>
-
-  <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>Spanish (Native)</li>
-    <li>English (C2)</li>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>Tailwind</li>
-    <li>Bootstrap</li>
-    <li>JavaScript</li>
-    <li>Git</li>
-    <li>Github</li>
-    <li>Shopify</li>
-    <li>Kajabi</li>
-    <li>Wordpress</li>
-    <li>Astro</li>
-    <li>Photoshop</li>
-    <li>Adobe Illustrator</li>
-    
-    
-  </ul>
+  <!-- LISTA DE TÉCNOLOGÍAS WEB QUE SE MANEJA, SE HA CREADO UN COMPONENTE PARA ESTA SECCIÓN PARA NO SATURAR ESTA HOJA -->
+  <SkillsTech>
+  </SkillsTech>
 </BaseLayout>

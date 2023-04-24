@@ -3,11 +3,19 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
 
+//OBTIENE EL COLLECTION DE LA SECCIÓN DE BLOG Y LUEGO MUESTRA LOS ULTIMOS
 const posts = (await getCollection('blog')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 
 const last_posts = posts.slice(0, 3);
+
+//OBTIENE EL COLLECTION DE PROJECT Y LUEGO MUESTRA LOS ULTIMOS
+const postsEntry = (await getCollection('project')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+const last_postsEntry = postsEntry.slice(0, 3);
 ---
 
 <BaseLayout>
@@ -38,7 +46,7 @@ const last_posts = posts.slice(0, 3);
       title="HackLatino - Shopify Website"
       img="/HackLatinoWebsite.webp"
       desc="Look what I achieved! I designed the website for HackLatino Academy using the Shopify CMS platform, meeting all the specifications requested by the client. It looks amazing!"
-      url="https://www.hacklatino.com/"
+      url="/project/hacklatino"
       badge="#SHOPIFY"
     />
     <div class="divider my-0"></div>
@@ -85,6 +93,20 @@ const last_posts = posts.slice(0, 3);
   badge="#HTML #CSS #ASTRO"
 />
 
+{
+  last_postsEntry.map((postProject) => (
+    <HorizontalCard
+      title={postProject.data.title}
+      img={postProject.data.heroImage}
+      desc={postProject.data.description}
+      url={"/project/" + postProject.slug}
+      target="_self"
+      badge={postProject.data.badge}
+    />
+    <div class="divider my-0"></div>
+  ))
+}
+
 
 <div class=""></div>
   <HorizontalCard
@@ -113,4 +135,6 @@ const last_posts = posts.slice(0, 3);
         <div class="divider my-0"></div>
       ))
     }
+
+
 </BaseLayout>

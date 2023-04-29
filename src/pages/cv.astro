@@ -7,7 +7,7 @@ import SkillsTech from "../components/cv/SkillsTech.astro";
 
 <BaseLayout title = "Resume">
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Profile</div>
+    <div class="text-3xl w-full font-bold">About me</div>
   </div>
 
   <div class="mb-10 text-justify">
@@ -21,8 +21,8 @@ import SkillsTech from "../components/cv/SkillsTech.astro";
 
   <div class="time-line-container grid gap-4 mb-10">
     <TimeLineElement
-      title="Licenciatura en Ingeniería en Sistemas Computacionales"
-      subtitle="2022 to present at Universidad Más Educación y Enseñanza, Tabasco, México"
+      title="Bachelor s Degree in Computer Systems Engineering"
+      subtitle="2022 to present at UMAEE Business University, Tabasco, México"
     />
     <!--
     <TimeLineElement
@@ -38,10 +38,15 @@ import SkillsTech from "../components/cv/SkillsTech.astro";
 
   <div class="time-line-container mb-10">
     <TimeLineElement
-      title="Digital platforms manager and academic assistant."
-      subtitle="From 2021 at 2023, Tabasco, México"
-      desc="System multiplatform that includes the steps of a company's personnel, the structure and composition thereof, as well as a powerful designer of credentials and module of control of access. Outspread at the MINFAR and another entities of the country. Technologies: C++, Qt Framework, Subversión, Visual Paradigm, PostgreSQL, Jmeter"
+      title="Digital Platforms Manager and Academic Assistant."
+      subtitle="From 2021 at 2023, Tabasco, México. UMAEE Business University"
+      desc="I administered access for collaborators to the following digital platforms: Kajabi, Classroom, Scholarsoft, and Google Admin. Created a variety of sales-oriented landing pages using Kajabi CMS, HTML, and CSS. Designed the main mockup for the university website using Photoshop and Figma. Provided technical support to students and teachers related to digital platforms. Created email marketing templates using embedded HTML and CSS"
     />
+    <TimeLineElement
+    title="Freelance for HackLatino Academy"
+    subtitle="2022, Atlanta Georgia. HackLatino"
+    desc="I planned, designed, and developed the main website of Hack Latino Academy using Photoshop and Figma to create the main mockup and later developed it on Shopify. I met the client's requirements on time and in the required form"
+  />
   </div>
 
   <div class="mb-5">
@@ -56,11 +61,29 @@ import SkillsTech from "../components/cv/SkillsTech.astro";
       <a href="https://community.open-bootcamp.com/user/soyzith/certificaciones/b4b8e02f-6024-4501-90d8-859fb73d7b9c" target="_blank"> HTML y CSS (OpenBootcamp)</a>
     </li>
      <li>
-      <a href="https://www.efset.org/cert/DxtNKG" target="_blank"> Conceptos básicos de Cloud Computing (Grow with Google)</a>
+      <a href="https://drive.google.com/file/d/1rf7Qtau6itYJKZetv2HMdvUSF-wkgtDB/view" target="_blank"> Conceptos básicos de Cloud Computing (Grow with Google)</a>
     </li>
   </ul>
 
   <!-- LISTA DE TÉCNOLOGÍAS WEB QUE SE MANEJA, SE HA CREADO UN COMPONENTE PARA ESTA SECCIÓN PARA NO SATURAR ESTA HOJA -->
-  <SkillsTech>
-  </SkillsTech>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">My stack</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 mx-6">
+    <li>HTML5</li>
+    <li>CSS3</li>
+    <li>JavaScript</li>
+    <li>Bootstrap</li>
+    <li>Astro</li>
+    <li>VsCode</li>
+    <li>Tailwind</li>
+    <li>Git</li>
+    <li>Github</li>
+    <li>Figma</li>
+    <li>Adobe Illustrator</li>
+    <li>Photoshop</li>
+    <li>Shopify</li>
+  </ul>
 </BaseLayout>

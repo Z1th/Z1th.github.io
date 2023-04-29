@@ -30,3 +30,7 @@ This detailed and meticulous approach to the design and functionality of the nav
 
 It is important to note that each section has a unique link that directs the user to the corresponding page, which is fundamental to maintaining the coherence and effectiveness of navigation on the website.
 
+<b>Gallery</b>
+<br>
+
+<a href="https://www.hacklatino.com/">Live Demo!</a>

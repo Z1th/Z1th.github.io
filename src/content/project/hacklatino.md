@@ -37,7 +37,7 @@ You can preview the second option by <a href="https://drive.google.com/file/d/1i
 
 
 <b>Gallery</b>
-<img src="/public/hacklatino/HackLatino_1.webp">
-<img src="/public/hacklatino/HackLatino_2.webp">
-<img src="/public/hacklatino/HackLatino_3.webp">
+<img src="/hacklatino/HackLatino_1.webp">
+<img src="/hacklatino/HackLatino_2.webp">
+<img src="/hacklatino/HackLatino_3.webp">
 <a href="https://www.hacklatino.com/" target="_BLANK">Live Demo!</a>

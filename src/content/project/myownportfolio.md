@@ -103,6 +103,6 @@ The other pages are static pages. The index page belong to the root page.
 This website is hosted on Github pages following the specific documentation of <a href="https://docs.astro.build/en/guides/deploy/github/" target="_BLANK">Astro.build for Github pages</a>.
 
 <h2><b>This website meets all the optimizations!</b></h2>
-<img src="/public/rendimientoWebsite.webp">
+<img src="/rendimientoWebsite.webp">
 <a href="https://pagespeed.web.dev/analysis/https-z1th-github-io/8kg5z9tvs2?hl=es-419&form_factor=mobile">Try it yourself</a>
 <!-- Insertar video aquí-->

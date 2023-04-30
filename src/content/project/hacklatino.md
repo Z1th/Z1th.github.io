@@ -18,8 +18,9 @@ In conclusion, this project was developed successfully and within the establishe
 <ul>
 <li>HTML</li>
 <li>CSS</li>
-<li>SHOPIFY</li>
-<li>PHOTOSHOP</li>
+<li>Liquid</li>
+<li>Shopify</li>
+<li>Photoshop</li>
 </ul>
 
 <b>Project Design</b>
@@ -30,9 +31,13 @@ This detailed and meticulous approach to the design and functionality of the nav
 
 It is important to note that each section has a unique link that directs the user to the corresponding page, which is fundamental to maintaining the coherence and effectiveness of navigation on the website.
 
+For this project, two different proposals were made. The first one is the current one that you can see in the preview with a striking color palette provided by the client. The second one has a more minimalist style but it's easy to read, resembling a landing page.
+
+You can preview the second option by <a href="https://drive.google.com/file/d/1inalBkHcpPPxuxpukKhUx4pRQlcmNbo9/view?usp=sharing" target="_BLANK">clicking here.</a>
+
+
 <b>Gallery</b>
-
-
-<br>
-
-<a href="https://www.hacklatino.com/">Live Demo!</a>
+<img src="/public/hacklatino/HackLatino_1.webp">
+<img src="/public/hacklatino/HackLatino_2.webp">
+<img src="/public/hacklatino/HackLatino_3.webp">
+<a href="https://www.hacklatino.com/" target="_BLANK">Live Demo!</a>

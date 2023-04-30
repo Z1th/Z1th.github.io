@@ -16,6 +16,6 @@ I wanted something simple and intuitive, not overly saturated with elements, and
 
 I am really excited about all the things I have yet to develop, all the developers and teams I have yet to meet. I know it will be something I will treasure with great affection.
 
-If you want to know technical information about my portfolio, click on this <a href="#">readme!</a>
+If you want to know technical information about my portfolio, click on this <a href="/project/myownportfolio">readme!</a>
 
 <!-- Insertar video aquí-->
